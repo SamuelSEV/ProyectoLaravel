@@ -47,10 +47,7 @@ class ProveedorController extends Controller
         return redirect('/proveedores');
     }
 
-    public function categoria()
-    {
-        return $this->hasMany('App\Models\ArticuloController', 'categoria','categoria');
-    }
+    
 
     /**
      * Display the specified resource.

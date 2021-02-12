@@ -29,13 +29,13 @@
                 <form action="{{route('articulos.destroy', $articulo->id)}}" method="POST">
                     @csrf
                     @method('DELETE')
+                
                     <a href="/articulos/{{ $articulo->id}}/edit" class="btn btn-info">Editar</a>
-                    <a href="/proveedores" class="btn btn-success">Proveedor</a>
+                    <a href="/articulos/{{ $articulo->id}}/show" class="btn btn-success">Proveedor</a>
                     <button type="submit" class="btn btn-danger">Borrar</button>
                 </form>
             </td>
         </tr>
-            
         @endforeach
     </tbody>
 </table>

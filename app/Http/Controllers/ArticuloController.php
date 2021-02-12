@@ -47,10 +47,7 @@ class ArticuloController extends Controller
         return redirect('/articulos');
     }
 
-    public function categorias()
-    {
-        return $this->belongsTo('App\Models\ArticuloController', 'categoria','categoria');
-    } 
+
 
     /**
      * Display the specified resource.
@@ -60,7 +57,10 @@ class ArticuloController extends Controller
      */
     public function show($id)
     {
-        //
+        $proveedor = Articulo::find($id)->categorias()->get()[0];
+
+        return view('proveedor.index')->with('proveedor', $proveedor);
+
     }
 
     /**
