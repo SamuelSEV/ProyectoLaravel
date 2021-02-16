@@ -60,11 +60,43 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 # proyectoLatavel
 
-Este es un proyecto donde se usa laravel y una base de datos mysql con dos tablas una de proveedores y otra de articulos.
+Este es un proyecto donde se usa laravel y una base de datos mysql con dos tablas una de proveedores y otra de artículos.
+
+Funciona de la siguiente forma, podemos agregar artículos y proveedores, en la tabla artículos podemos ir a traves del boton verde prooveedores al proveedor de ese artículo (esta parte no funciona bien todavia).
+
+También podemos editar y borar cualquier artículo o proveedor con los botones correspondientes.
 
 ## Que necesitamos para desplegarlo
 
+Tener instalado laravel --> https://victorsosa.com/como-instalar-laravel-en-ubuntu-20-04/
+
 Necesitamos hacer un git clone del proyecto.
-Cambiamos el .env
+Cambiamos el nombre del archivo .env.xxxx si fuera necesario a .env
+
+## Para desplegarlo
+Instalamos dependencias con el comando
+```
+composer install
+```
+
+Migramos las tablas con:
+
+```
+php artisan migrate
+```
+
+Iniciamos el servidor con:
+
+```
+php artisan serve
+```
+## URL
+
+http://localhost:8000/articulos
+
+## Autor
+
+Samuel Rivera Peñalosa
