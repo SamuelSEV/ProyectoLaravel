@@ -61,3 +61,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # proyectoLatavel
+
+Este es un proyecto donde se usa laravel y una base de datos mysql con dos tablas una de proveedores y otra de articulos.
+
+## Que necesitamos para desplegarlo
+
+Necesitamos hacer un git clone del proyecto.
+Cambiamos el .env
