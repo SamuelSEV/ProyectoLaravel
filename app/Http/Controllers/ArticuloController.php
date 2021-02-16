@@ -58,8 +58,7 @@ class ArticuloController extends Controller
     public function show($id)
     {
         $proveedor = Articulo::find($id)->categorias()->get()[0];
-
-        return view('proveedor.index')->with('proveedor', $proveedor);
+        return view('articulo.proveedor')->with('proveedor', $proveedor);
 
     }
 
